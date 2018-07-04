@@ -1,7 +1,7 @@
 @charset "EUC-KR";
 
 
-*{margin:0;padding:0;}
+*{width:100%;margin:0;padding:0;}
 
 .main{
 	position:relative;
@@ -115,7 +115,7 @@
 .screen4{
 	background:#0f657a url("../img/screen4-1.jpg") no-repeat;
 	background-position:center 200px;
-	
+	min-height:1000px;
 }
 .screen4:after{
 	position:absolute;
@@ -123,7 +123,7 @@
 	width:100%;
 	height:167px;
 	content:'';
-	background:url("../img/screen4-2.jpg") no-repeat;
+	background:url("../img/screen4-2.jpg") repeat-x;
 }
 
 .screen4 .text{
@@ -146,4 +146,48 @@
 	color:#f0dc98;
 	font-size:20px;
 }
+
+.screen4 .children{
+	position:relative;
+	top:100px;
+	height:800px;
+	width:1300px;
+	margin:0px auto;
+	z-index:10;
+}
+
+.screen4 .children .child{
+	position:relative;
+	display:inline-block;
+	width:300px;
+	height:100%;
+	margin-left:10px;
+	background-position:bottom;
+}
+
+.child.num1{
+	background:url("../img/children_01_off.png") no-repeat;
+	top:10px;
+	left:30px;
+}
+
+.child.num2{
+	background:url("../img/children_02_off.png") no-repeat;
+	top:10px;
+	left:0px;
+}
+.child.num3{
+	background:url("../img/children_03_off.png") no-repeat;
+	top:40px;
+	left:0px;
+}
+.child.num4{
+	background:url("../img/children_04_off.png") no-repeat;
+	top:0px;
+	left:0px;
+}
+
+
+
+
 /* screen4 스타일 끝 */
