@@ -1,0 +1,36 @@
+@charset "EUC-KR";
+
+
+*{margin:0;padding:0;}
+
+.screen1{
+	width:100%;
+	height:900px;
+	background:green;
+	
+	
+}
+
+.screen2{
+	width:100%;
+	height:900px;
+	background:yellow;
+	
+	
+}
+
+.screen3{
+	width:100%;
+	height:900px;
+	background:green;
+	
+	
+}
+
+.screen4{
+	width:100%;
+	height:900px;
+	background:yellow;
+	
+	
+}
