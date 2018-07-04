@@ -3,34 +3,147 @@
 
 *{margin:0;padding:0;}
 
+.main{
+	position:relative;
+	min-height:500px;
+	width:100%;
+	
+}
+
 .screen1{
-	width:100%;
-	height:900px;
-	background:green;
 	
+	background:url("../img/screen1.jpg") no-repeat;
+	background-size:cover;
+	background-position:center center;
+	color:white;
 	
 }
 
+.screen1 .text{
+	position:absolute;
+	bottom:150px;
+	width:100%;
+	text-align:center;
+}
+
+
+.screen1 h1{
+	
+	
+	margin:0 auto 30px;
+	font-weight:normal;
+	
+}
+
+
+.screen1 h1 em{
+	color:#178ca9;
+	font-style:normal;
+	font-weight:bold;
+}
+
+.screen1 p{
+	margin:0 auto 10px;
+}
+/* screen1 胶鸥老 场 */
 .screen2{
-	width:100%;
-	height:900px;
-	background:yellow;
+	background:url("../img/screen2.jpg") no-repeat;
+	background-size:cover;
+	background-position:center center;
+}
+
+.screen2 .text{
+	position:relative;
+	top:250px;
+	max-width:900px;
+	margin:0 auto;
+	padding-left:100px;
+}
+
+
+.screen2 h1{
 	
+	margin:0 auto 30px;
+	font-weight:normal;
 	
 }
 
+
+.screen2 h1 em{
+	color:#178ca9;
+	font-style:normal;
+	font-weight:bold;
+}
+
+.screen2 p{
+	margin:0 auto 10px;
+}
+/* screen2 胶鸥老 场 */
 .screen3{
+	background:url("../img/screen3.jpg") no-repeat;	
+	background-size:cover;
+	background-position:center center;
+	color:white;
+}
+.screen3 .text{
+	position:absolute;
+	top:150px;
 	width:100%;
-	height:900px;
-	background:green;
+	text-align:center;
+}
+
+
+.screen3 h1{
 	
+	
+	margin:0 auto 30px;
+	font-weight:normal;
 	
 }
 
+
+.screen3 h1 em{
+	color:#178ca9;
+	font-style:normal;
+	font-weight:bold;
+}
+
+.screen3 p{
+	margin:0 auto 10px;
+}
+/* screen3 胶鸥老 场 */
 .screen4{
-	width:100%;
-	height:900px;
-	background:yellow;
-	
+	background:#0f657a url("../img/screen4-1.jpg") no-repeat;
+	background-position:center 200px;
 	
 }
+.screen4:after{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:167px;
+	content:'';
+	background:url("../img/screen4-2.jpg") no-repeat;
+}
+
+.screen4 .text{
+	position:absolute;
+	top:50px;
+	width:100%;
+	text-align:center;
+	color:white;
+}
+
+
+.screen4 h1{
+	margin:0 auto 30px;
+	font-weight:normal;
+	font-size:48px;
+}
+
+.screen4 p{
+	margin:0 auto 10px;
+	color:#f0dc98;
+	font-size:20px;
+}
+/* screen4 胶鸥老 场 */
