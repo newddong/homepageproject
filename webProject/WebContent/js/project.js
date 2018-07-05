@@ -20,6 +20,7 @@ $(function() {
 //		$(".screen10").height(height);
 //		$(".screen11").height(height);
 		$(".main").height(height);
+		$(".intro").height(height);
 
 	}); //load resize end
 	
