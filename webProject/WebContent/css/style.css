@@ -1,7 +1,12 @@
 @charset "EUC-KR";
 
 
-*{width:100%;margin:0;padding:0;}
+*{width:100%;margin:0;padding:0;box-sizing:border-box;}
+
+.content{
+	max-width:1920px;
+	margin:0 auto;
+}
 
 .main{
 	position:relative;
@@ -206,3 +211,193 @@
 	background-position:bottom;
 }
 /* screen4 胶鸥老 场 */
+.screen5{
+	background:url("../img/screen5.jpg") no-repeat;
+	background-size:cover;
+	background-position:center center;
+	color:#666;
+	text-align:center;
+	overflow:auto;
+}
+.screen5 .logo{
+	width:400px;
+	height:150px;
+	background:url("../img/screen05_obj_01.png") no-repeat;
+	background-position:center center;
+	margin:12% auto 50px;
+}
+
+.screen5 h1{
+	margin:5% auto 5%;
+	color:#333;
+	font-size:50px;
+}
+.screen5 h2{
+	margin:2% auto 2%;
+	font-size:30px;
+}
+.screen5 p{
+	margin:2% auto 2%;
+	font-size:18px;
+}
+
+
+.screen5 .round1{
+	width:80px;
+	height:80px;
+	background:#0f657a;
+	border-radius:50%;
+	margin:0 auto;
+	color:white;
+	font-size:40px;
+	display:table;
+}
+.screen5 .round1 p{
+	font-size:40px;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+/* screen5 胶鸥老 场 */
+.screen6{
+	
+	background:url("../img/screen6.jpg") no-repeat;
+	background-size:cover;
+	background-position:center center;
+	color:#666;
+	
+}
+/* screen6 胶鸥老 场 */
+.screen7{
+	
+	background:url("../img/screen7.jpg") no-repeat;
+	background-size:cover;
+	background-position:center center;
+	color:white;
+	
+}
+/* screen7 胶鸥老 场 */
+.screen8{
+	
+	background:url("../img/screen8.jpg") no-repeat;
+	background-size:cover;
+	background-position:center center;
+	color:white;
+	
+}
+/* screen8 胶鸥老 场 */
+.screen9{
+	
+	background:url("../img/screen9.jpg") no-repeat;
+	background-size:cover;
+	background-position:center center;
+	color:white;
+	
+}
+/* screen9 胶鸥老 场 */
+.screen10{
+	
+	background:url("../img/screen10.jpg") no-repeat;
+	background-size:cover;
+	background-position:center center;
+	color:white;
+	
+}
+/* screen10 胶鸥老 场 */
+.screen11 {
+	color: white;
+}
+
+.screen11 .pic1wrap {
+	position: absolute;
+	height: 50%;
+	width: 50%;
+}
+
+.screen11 .pic2wrap {
+	position: absolute;
+	bottom: 0;
+	height: 50%;
+	width: 25%;
+}
+
+.screen11 .pic3wrap {
+	position: absolute;
+	bottom: 0;
+	left: 25%;
+	height: 50%;
+	width: 25%;
+}
+
+.screen11 .pic4wrap {
+	position: absolute;
+	left: 50%;
+	height: 100%;
+	width: 25%;
+}
+
+.screen11 .pic5wrap {
+	position: absolute;
+	bottom: 50%;
+	right: 0;
+	height: 50%;
+	width: 25%;
+}
+
+.screen11 .pic6wrap {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 50%;
+	width: 25%;
+}
+
+.screen11 .pic1 {
+	width:100%;
+	height:100%;
+	background: url("../img/screen11obj1.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.screen11 .pic2 {
+	width:100%;
+	height:100%;
+	background: url("../img/screen11obj2.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.screen11 .pic3 {
+	width:100%;
+	height:100%;
+	background: url("../img/screen11obj3.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.screen11 .pic4 {
+	width:100%;
+	height:100%;
+	background: url("../img/screen11obj4.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.screen11 .pic5 {
+	width:100%;
+	height:100%;
+	background: url("../img/screen11obj5.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.screen11 .pic6 {
+	width:100%;
+	height:100%;
+	background: url("../img/screen11obj6.jpg") no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+/* screen11 胶鸥老 场 */
