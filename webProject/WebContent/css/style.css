@@ -171,6 +171,7 @@
 	left:30px;
 }
 
+
 .child.num2{
 	background:url("../img/children_02_off.png") no-repeat;
 	top:10px;
@@ -187,7 +188,21 @@
 	left:0px;
 }
 
+.child.num1.on{
+	background:url("../img/children_01_on.png") no-repeat;
+	background-position:bottom;
+}
 
-
-
+.child.num2.on{
+	background:url("../img/children_02_on.png") no-repeat;
+	background-position:bottom;
+}
+.child.num3.on{
+	background:url("../img/children_03_on.png") no-repeat;
+	background-position:bottom;
+}
+.child.num4.on{
+	background:url("../img/children_04_on.png") no-repeat;
+	background-position:bottom;
+}
 /* screen4 스타일 끝 */
