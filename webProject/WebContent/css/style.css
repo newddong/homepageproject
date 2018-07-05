@@ -143,13 +143,13 @@
 .screen4 h1{
 	margin:0 auto 30px;
 	font-weight:normal;
-	font-size:48px;
+	font-size:3em;
 }
 
 .screen4 p{
 	margin:0 auto 10px;
 	color:#f0dc98;
-	font-size:20px;
+	font-size:1.2em;
 }
 
 .screen4 .children{
@@ -224,21 +224,21 @@
 	height:150px;
 	background:url("../img/screen05_obj_01.png") no-repeat;
 	background-position:center center;
-	margin:12% auto 50px;
+	margin:8% auto 0;
 }
 
 .screen5 h1{
-	margin:5% auto 5%;
+	margin:1% auto 3%;
 	color:#333;
-	font-size:50px;
+	font-size:2em;
 }
 .screen5 h2{
-	margin:2% auto 2%;
-	font-size:30px;
+	margin:1% auto 1%;
+	font-size:1.4em;
 }
 .screen5 p{
-	margin:2% auto 2%;
-	font-size:18px;
+	margin:1% auto 1%;
+	font-size:1em;
 }
 
 
@@ -249,11 +249,11 @@
 	border-radius:50%;
 	margin:0 auto;
 	color:white;
-	font-size:40px;
 	display:table;
+	margin-top:7%;
 }
 .screen5 .round1 p{
-	font-size:40px;
+	font-size:2em;
 	display:table-cell;
 	vertical-align:middle;
 	text-align:center;
@@ -274,13 +274,12 @@
 	height:80px;
 	background:white;
 	border-radius:50%;
-	margin:0 auto;
+	margin:20% auto 0;
 	color:#0f657a;
-	font-size:40px;
 	display:table;
 }
 .screen6 .round2 p{
-	font-size:40px;
+	font-size:2em;
 	display:table-cell;
 	vertical-align:middle;
 	text-align:center;
@@ -288,11 +287,11 @@
 
 .screen6 h2{
 	margin:2% auto 2%;
-	font-size:30px;
+	font-size:1.4em;
 }
 .screen6 p{
 	margin:2% auto 2%;
-	font-size:18px;
+	font-size:1em;
 }
 /* screen6 胶鸥老 场 */
 
@@ -303,6 +302,7 @@
 	background-position:center center;
 	color:#333;
 	text-align:center;
+	overflow:auto;
 }
 
 .screen7 .round3{
@@ -310,13 +310,12 @@
 	height:80px;
 	background:#0f657a;
 	border-radius:50%;
-	margin:0 auto;
+	margin:10% auto 0;
 	color:white;
-	font-size:40px;
 	display:table;
 }
 .screen7 .round3 p{
-	font-size:40px;
+	font-size:2em;
 	display:table-cell;
 	vertical-align:middle;
 	text-align:center;
@@ -324,17 +323,12 @@
 
 .screen7 h2{
 	margin:2% auto 2%;
-	font-size:30px;
+	font-size:1.4em;
 }
 .screen7 p{
 	margin:2% auto 2%;
-	font-size:18px;
+	font-size:1em;
 }
-
-
-
-
-
 
 
 
@@ -346,17 +340,129 @@
 	background-size:cover;
 	background-position:center center;
 	color:white;
+	overflow:hidden;
+	letter-spacing:-0.05em;
+}
+
+.screen8 .logo{
+	
+	background:url("../img/screen8obj1.png") no-repeat;
+	background-position:center center;
+	margin:5% auto -3%;
+	width:800px;
+	height:200px;
+	
 	
 }
+
+.screen8 h1{
+	
+	text-align:center;
+}
+.screen8>ul{
+	min-width:800px;
+	width:70%;
+	height:40%;
+	margin:5% auto 0;
+}
+
+.screen8>ul>li{
+	position:relative;
+	width:22%;
+	height:100%;
+	display:inline-block;
+	margin-left:2%;
+}
+.screen8>ul>li:before{
+	content:'';
+	position:absolute;
+	background:white;
+	left:-4%;
+	width:1px;
+	height:100%;
+
+}
+.screen8>ul>li h2{
+ 	color:#e1d2ba;
+	
+}	
+.screen8>ul>li>p{
+	font-size:5.5em;
+	margin-top:-10%;
+}
+
+.screen8>ul>li>ul{
+	margin-top:30px;
+	height:50%;
+	display:table;
+}
+
+.screen8 ul>li>ul>li{
+	width:80%;
+	display:table-row;
+	color:#c7c7c7;
+}
+
+
 /* screen8 胶鸥老 场 */
 .screen9{
-	
-	background:url("../img/screen9.jpg") no-repeat;
-	background-size:cover;
-	background-position:center center;
-	color:white;
+	overflow:hidden;
+	color:#333;
+}
+
+.screen9 h1{
+	margin-top:3%;
+	text-align:center;
 	
 }
+.screen9 h2{
+	margin-bottom:10px;
+}
+.screen9 p{
+	margin-bottom:10px;
+}
+.screen9 .interview{
+	position:relative;		
+	width:55%;
+	height:38%;
+	margin:3% auto 0;
+}
+
+.screen9 .interview .pic1{
+	position:absolute;
+	width:500px;
+	height:300px;
+	background:url("../img/screen9obj1.jpg");
+}
+.screen9 .interview .text1{
+	position:absolute;
+	right:0;
+	width:500px;
+	height:300px;
+}
+
+.screen9 .interview .pic2{
+	position:absolute;
+	right:0;
+	width:500px;
+	height:300px;	
+	background:url("../img/screen9obj2.jpg");
+}
+.screen9 .interview .text2{
+	position:absolute;
+	left:0;
+	width:500px;
+	height:300px;
+	
+}
+
+.num2{
+	text-align:right;
+}
+
+
+
+
 /* screen9 胶鸥老 场 */
 .screen10{
 	
