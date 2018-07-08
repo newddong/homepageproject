@@ -1,0 +1,16 @@
+@charset "EUC-KR";
+
+.test{
+	position:absolute;
+	height:300px;
+	width:300px;
+	
+}
+
+.num1{
+	background:red;
+}
+.num2{
+	background:green;
+	left:300px;
+}
