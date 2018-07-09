@@ -8,19 +8,17 @@ $(function() {
 	var height = window.innerHeight;
 	var width = window.innerWidth;
 	if(window.innerWidth>=1920){
-	width = 1920;
+		width = 1920;
 	}
 	else if(window.innerWidth<=640){
 		width = 640;	
 	}
+	
 	$(".main").width(width);
 	$(".intro").height(height);
 	$(".intro").width(width);
 	$(".menubar_content").width(width);
-	var verticalbar = $(".intro").height()+$(".screen1").height()+$(".screen2").height()+$(".screen3").height()+$(".screen4").height()+$(".screen5").height()+$(".screen6").height();
-	verticalbar = verticalbar-$(".screen6").height()*0.25;
-	$(".verticalbar").css('top',verticalbar+"px");
-	$(".verticalbar").height($(".screen6").height()*0.5);
+	
 	if(width>=800){
 		$(".screen11").height(width*0.447);
 		$(".pic1wrap").css({top:0,left:0,width:'50%',height:'50%'});
@@ -41,13 +39,14 @@ $(function() {
 	}
 	
 	$(window).on("resize", function() {
+		
 		height = window.innerHeight;
 		width = window.innerWidth;
 		if(window.innerWidth>=1920){
-		width = 1920;
+			width = 1920;
 		}
-		else if(window.innerWidth<=640){
-			width = 640;	
+		else if(window.innerWidth<=320){
+			width = 320;	
 		}
 		$(".screen1").height(width/2.14);
 		$(".screen2").height(width/2.14);
@@ -57,8 +56,8 @@ $(function() {
 		$(".screen6").height(width/2.75);
 		$(".screen7").height(width/2.75);
 		$(".screen8").height(width/1.75);
+		$(".screen9").height(width*0.625);
 		$(".screen10").height(width/2.14);
-		
 		
 		if(width>=800){
 			$(".screen11").height(width*0.447);
@@ -80,16 +79,28 @@ $(function() {
 		}
 		
 		
-		verticalbar = $(".intro").height()+$(".screen1").height()+$(".screen2").height()+$(".screen3").height()+$(".screen4").height()+$(".screen5").height()+$(".screen6").height();
-		verticalbar = verticalbar-$(".screen6").height()*0.25;
-		$(".verticalbar").css('top',verticalbar+"px");
-		$(".verticalbar").height($(".screen6").height()*0.5);
 		
 		$(".main").width(width);
 		$(".intro").height(height);
 		$(".intro").width(width);
 		$(".menubar_content").width(width);
 		
+		
+		
+		
+		$(".screen1 .text").css("fontSize",width/100);
+		$(".screen2 .text").css("fontSize",width/100);
+		$(".screen3 .text").css("fontSize",width/100);
+		$(".screen4 .text").css("fontSize",width/100);
+		$(".screen5 .text").css("fontSize",width/100);
+		$(".screen6 .text").css("fontSize",width/100);
+		$(".screen7 .text").css("fontSize",width/100);
+		$(".screen8 .text").css("fontSize",width/100);
+		$(".screen9").css("fontSize",width/100);
+		$(".screen5 .round1").height(width*0.0417).width(width*0.0417);
+		$(".screen5 .logo").height(width*0.0625);
+		$(".screen6 .round2").height(width*0.0417).width(width*0.0417);
+		$(".screen7 .round3").height(width*0.0417).width(width*0.0417);
 		
 	}); //load resize end
 	

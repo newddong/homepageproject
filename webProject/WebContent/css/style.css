@@ -195,6 +195,7 @@
 
 .screen1 .text {
 	position: absolute;
+	top:50%;
 	bottom: 150px;
 	width: 100%;
 	text-align: center;
@@ -224,10 +225,9 @@
 
 .screen2 .text {
 	position: relative;
-	top: 250px;
-	max-width: 900px;
-	margin: 0 auto;
-	padding-left: 100px;
+	top: 30%;
+	left:30%;
+	width: 50%;
 }
 
 .screen2 h1 {
@@ -255,7 +255,7 @@
 
 .screen3 .text {
 	position: absolute;
-	top: 150px;
+	top: 30%;
 	width: 100%;
 	text-align: center;
 }
@@ -293,7 +293,7 @@
 
 .screen4 .text {
 	position: absolute;
-	top: 50px;
+	top: 5%;
 	width: 100%;
 	text-align: center;
 	color: white;
@@ -384,27 +384,25 @@
 }
 
 .screen5 .logo {
-	width: 400px;
-	height: 150px;
+	width: 140px;
+	height: 120px;
 	background: url("../img/screen05_obj_01.png") no-repeat;
 	background-position: center center;
+	background-size:contain;
 	margin: 3% auto 0;
 }
 
 .screen5 h1 {
 	margin: 1% auto 3%;
 	color: #333;
-	font-size: 2em;
 }
 
 .screen5 h2 {
 	margin: 1% auto 1%;
-	font-size: 1.4em;
 }
 
 .screen5 p {
 	margin: 1% auto 1%;
-	font-size: 1em;
 }
 
 .screen5 .round1 {
@@ -415,7 +413,7 @@
 	margin: 0 auto;
 	color: white;
 	display: table;
-	margin-top: 7%;
+	margin-top: 5%;
 }
 
 .screen5 .round1 p {
@@ -454,20 +452,17 @@
 
 .screen6 h2 {
 	margin: 2% auto 2%;
-	font-size: 1.4em;
 }
 
 .screen6 p {
 	margin: 2% auto 2%;
-	font-size: 1em;
 }
 
-.verticalbar{
-	position:absolute;
-	left:50%;
+.screen6 .verticalbar{
+	margin:0 auto;
 	width:1px;
-	height:1px;
-	background:red;
+	height:10px;
+	background:white;
 	z-index:1;
 }
 /* screen6 胶鸥老 场 */
@@ -500,12 +495,10 @@
 
 .screen7 h2 {
 	margin: 2% auto 2%;
-	font-size: 1.4em;
 }
 
 .screen7 p {
 	margin: 2% auto 2%;
-	font-size: 1em;
 }
 
 /* screen7 胶鸥老 场 */
@@ -522,23 +515,23 @@
 .screen8 .logo {
 	background: url("../img/screen8obj1.png") no-repeat;
 	background-position: center center;
-	margin: 5% auto -3%; width : 800px;
-	height: 200px;
-	width: 800px;
+	margin: 5% auto 0%;
+	width: 304px;
+	height: 96px;
 }
 
 .screen8 h1 {
 	text-align: center;
 }
 
-.screen8>ul {
+.screen8 .text>ul {
 	min-width: 800px; width : 70%;
 	height: 40%;
 	margin: 5% auto 0;
 	width: 70%;
 }
 
-.screen8>ul>li {
+.screen8 .text>ul>li {
 	position: relative; width : 22%;
 	height: 100%;
 	display: inline-block;
@@ -546,7 +539,7 @@
 	width: 22%;
 }
 
-.screen8>ul>li:before {
+.screen8 .text>ul>li:before {
 	content: '';
 	position: absolute;
 	background: white;
@@ -555,22 +548,22 @@
 	width: 1px;
 }
 
-.screen8>ul>li h2 {
+.screen8 .text>ul>li h2 {
 	color: #e1d2ba;
 }
 
-.screen8>ul>li>p {
+.screen8 .text>ul>li>p {
 	font-size: 5.5em;
 	margin-top: -10%;
 }
 
-.screen8>ul>li>ul {
+.screen8 .text>ul>li>ul {
 	margin-top: 30px;
 	height: 50%;
 	display: table;
 }
 
-.screen8 ul>li>ul>li {
+.screen8 .text ul>li>ul>li {
 	width: 80%;
 	display: table-row;
 	color: #c7c7c7;
@@ -579,7 +572,7 @@
 /* screen8 胶鸥老 场 */
 .screen9 {
 	overflow: hidden;
-	height:1100px;
+	height:1200px;
 	color: #333;
 }
 
