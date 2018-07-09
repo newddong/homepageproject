@@ -159,55 +159,55 @@ $(function() {
 	
 	
 	
-	var previous = $(window).scrollTop();	
-	var moved = false;
-	$(window).on("scroll",function(){
-		var cur = $(this).scrollTop();
-		var direction;
-		if(cur>previous){
-			direction='D';
-//			$(".round").text(cur + ":DN:"+moved);
-		}
-		else{
-			direction='U';
-//			$(".round").text(cur + ":UP:"+moved);
-		}
-		
-		previous = cur;
-		
-		if(direction=='D'){
-			for(var k=0;k<$(".content").children().length;k++){
-				if(cur<$(".content").children().eq(k).position().top){
-					$(window).scrollTop($(".content").children().eq(k).position().top-1);
-					break;
-				}
-			}
-		}
-		else if(direction=='U'){
-			for(var j=$(".content").children().length-1;j>=0;j--){
-				
-				var top = $(".content").children().eq(j).position().top;
-				
-				
-				if(cur>top){
-					$(window).scrollTop($(".content").children().eq(j).position().top+1);
-					break;
-				}
-				else if(cur<$(".content").position().top){
-					$(window).scrollTop(0);
-					break;
-				}
-				
-			}
-			
-			
-		}
-		
-		
-		
-		
-		
-	})	
+//	var previous = $(window).scrollTop();	
+//	var moved = false;
+//	$(window).on("scroll",function(){
+//		var cur = $(this).scrollTop();
+//		var direction;
+//		if(cur>previous){
+//			direction='D';
+////			$(".round").text(cur + ":DN:"+moved);
+//		}
+//		else{
+//			direction='U';
+////			$(".round").text(cur + ":UP:"+moved);
+//		}
+//		
+//		previous = cur;
+//		
+//		if(direction=='D'){
+//			for(var k=0;k<$(".content").children().length;k++){
+//				if(cur<$(".content").children().eq(k).position().top){
+//					$(window).scrollTop($(".content").children().eq(k).position().top-1);
+//					break;
+//				}
+//			}
+//		}
+//		else if(direction=='U'){
+//			for(var j=$(".content").children().length-1;j>=0;j--){
+//				
+//				var top = $(".content").children().eq(j).position().top;
+//				
+//				
+//				if(cur>top){
+//					$(window).scrollTop($(".content").children().eq(j).position().top+1);
+//					break;
+//				}
+//				else if(cur<$(".content").position().top){
+//					$(window).scrollTop(0);
+//					break;
+//				}
+//				
+//			}
+//			
+//			
+//		}
+//		
+//		
+//		
+//		
+//		
+//	})	
 		
 		
 		
