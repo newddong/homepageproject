@@ -157,7 +157,7 @@ $(function() {
 		
 	};
 	
-	
+	$(window).scrollTop($(".content").position().top);
 	
 //	var previous = $(window).scrollTop();	
 //	var moved = false;
