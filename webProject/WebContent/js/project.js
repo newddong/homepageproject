@@ -137,27 +137,66 @@ $(function() {
 	};
 	
 	
-	$(window).on("mousewheel DOMMouseScroll",function(e){
-		var E = e.originalEvent.wheelDelta;
-		var cur = $(this).scrollTop().toFixed(0);
+//	$(window).on("mousewheel DOMMouseScroll",function(e){
+//		var E = e.originalEvent.wheelDelta;
+//		var cur = $(this).scrollTop().toFixed(0);
+//		var direction;
+//		var moveTo;
+//		$(".shop_content p").text(E);
+//		if(E == -120){
+//			$(".round").text(cur + ":DOWN:"+E);
+//			direction = 'D';
+//		}else{
+//		$(".round").text(cur + ":UP:"+E);
+//			direction = 'U';
+//		}
+//		
+//		
+//		
+//		if(cur>=0 && direction == 'D'){
+//			$(window).scrollTop($(".screen1").position().top);
+//		}
+	
+	var previous = $(window).scrollTop();	
+	var moveddn = 0;
+	var movedup = 0;
+	$(window).on("scroll",function(){
+		var cur = $(this).scrollTop();
 		var direction;
-		var moveTo;
-		$(".shop_content p").text(E);
-		if(E == -120){
-			$(".round").text(cur + ":DOWN:"+E);
-			direction = 'D';
-		}else{
-		$(".round").text(cur + ":UP:"+E);
-			direction = 'U';
+		if(cur>previous){
+			direction='D';
+			$(".round").text(cur + ":DN:"+moveddn);
+		}
+		else{
+			direction='U';
+			$(".round").text(cur + ":UP:"+movedup);
+		}
+		
+		previous = cur;
+		
+		if(direction=='D'){
+			for(var k=0;k<$(".content").children().length;k++){
+				if(cur<$(".content").children().eq(k).position().top){
+					$(window).scrollTop($(".content").children().eq(k).position().top-1);
+					break;
+				}
+			}
+		}
+		else if(direction=='U'){
+			for(var j=$(".content").children().length-1;j>=0;j--){
+				var top = $(".content").children().eq(j).position().top;
+				if(cur>top){
+					$(window).scrollTop($(".content").children().eq(j).position().top+1);
+					break;
+				}
+			}
 		}
 		
 		
 		
-		if(cur>=0 && direction == 'D'){
-			$(window).scrollTop($(".screen1").position().top);
-		}
 		
 		
+	})	
 		
 		
 		
@@ -189,7 +228,7 @@ $(function() {
 		
 		
 		
-	})
+//	})
 	
 
 }); //javascript end
