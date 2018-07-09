@@ -184,12 +184,17 @@ $(function() {
 		}
 		else if(direction=='U'){
 			for(var j=$(".content").children().length-1;j>=0;j--){
+				
 				var top = $(".content").children().eq(j).position().top;
+				
+				
 				if(cur>top){
 					$(window).scrollTop($(".content").children().eq(j).position().top+1);
 					break;
 				}
+				
 			}
+			
 		}
 		
 		
