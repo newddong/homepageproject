@@ -276,10 +276,11 @@
 }
 /* screen3 스타일 끝 */
 .screen4 {
-	height:900px;
+	height:900px;/*비디오 없을시 900px*/
 	background: #0f657a url("../img/screen4-1.jpg") no-repeat;
 	background-position: center 200px;
 	min-height: 1000px;
+	overflow:auto;
 }
 
 .screen4:after {
@@ -292,11 +293,9 @@
 }
 
 .screen4 .text {
-	position: absolute;
-	top: 5%;
-	width: 100%;
 	text-align: center;
 	color: white;
+	margin:5% auto -6%;
 }
 
 .screen4 h1 {
@@ -311,14 +310,18 @@
 	font-size: 1.2em;
 }
 
+.screen4 .movie{
+	height:300px;
+}
 .screen4 .children {
 	position: relative;
-	top: 100px;
 	height: 800px;
 	width: 1300px;
 	margin: 0px auto;
 	z-index: 10;
 }
+
+
 
 .screen4 .children .child {
 	position: relative;
@@ -515,6 +518,7 @@
 .screen8 .logo {
 	background: url("../img/screen8obj1.png") no-repeat;
 	background-position: center center;
+	background-size:contain;
 	margin: 5% auto 0%;
 	width: 304px;
 	height: 96px;
@@ -525,10 +529,9 @@
 }
 
 .screen8 .text>ul {
-	width : 70%;
 	height: 40%;
-	margin: 5% auto 0;
-	width: 70%;
+	margin: 10% auto 0;
+	width: 75%;
 }
 
 .screen8 .text>ul>li {
@@ -558,7 +561,7 @@
 }
 
 .screen8 .text>ul>li>ul {
-	margin-top: 30px;
+	margin-top: 5%;
 	height: 50%;
 	display: table;
 }
@@ -572,7 +575,7 @@
 /* screen8 스타일 끝 */
 .screen9 {
 	overflow: hidden;
-	height:1200px;
+	height:1300px;
 	color: #333;
 }
 
@@ -591,37 +594,39 @@
 
 .screen9 .interview {
 	position: relative;
-	width: 55%;
+	width: 60%;
 	height: 38%;
 	margin: 3% auto 0;
 }
 
 .screen9 .interview .pic1 {
-	position: absolute; width : 500px;
-	height: 300px;
-	width: 500px; height : 300px;
-	background: url("../img/screen9obj1.jpg");
+	position: absolute;
+	height: 326px;
+	width: 480px;
+	background: url("../img/screen9obj1.jpg") no-repeat;
+	background-size:contain;
 }
 
 .screen9 .interview .text1 {
 	position: absolute;
 	right: 0;
-	width: 500px;
+	width: 600px;
 	height: 300px;
 }
 
 .screen9 .interview .pic2 {
 	position: absolute;
 	right: 0;
-	width: 500px;
-	height: 300px;
-	background: url("../img/screen9obj2.jpg");
+	width: 480px;
+	height: 326px;
+	background: url("../img/screen9obj2.jpg") no-repeat;
+	background-size:contain;
 }
 
 .screen9 .interview .text2 {
 	position: absolute;
 	left: 0;
-	width: 500px;
+	width: 600px;
 	height: 300px;
 }
 

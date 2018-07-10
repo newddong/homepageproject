@@ -56,10 +56,11 @@ $(function() {
 		$(".screen6").height(width/2.75);
 		$(".screen7").height(width/2.75);
 		$(".screen8").height(width/1.75);
-		$(".screen9").height(width*0.625);
 		$(".screen10").height(width/2.14);
 		
+		
 		if(width>=800){
+			$(".screen9").height(width*0.678);
 			$(".screen11").height(width*0.447);
 			$(".pic1wrap").css({top:0,left:0,width:'50%',height:'50%'});
 			$(".pic2wrap").css({top:'50%',left:0,width:'25%',height:'50%'});
@@ -67,8 +68,14 @@ $(function() {
 			$(".pic4wrap").css({top:0,left:'50%',width:'25%',height:'100%'});
 			$(".pic5wrap").css({top:0,left:'75%',width:'25%',height:'50%'});
 			$(".pic6wrap").css({top:'50%',left:'75%',width:'25%',height:'50%'});
+			
+			$(".screen9 .pic1").width(width*(480/1920)).height(width*0.678*326/1200).css('position','absolute');
+			$(".screen9 .pic2").width(width*(480/1920)).height(width*0.678*326/1200).css('position','absolute');
+			$(".screen9 .text1").width(width*(600/1920)).height(width*0.678*300/1200).css('position','absolute');
+			$(".screen9 .text2").width(width*(600/1920)).height(width*0.678*300/1200).css('position','absolute');
 		}
 		else{
+			$(".screen9").height(width*1.6);
 			$(".screen11").height(width*4*0.447);
 			$(".pic1wrap").css({top:0,left:0,width:'100%',height:'25%'});
 			$(".pic2wrap").css({top:'25%',left:0,width:'50%',height:'25%'});
@@ -76,6 +83,11 @@ $(function() {
 			$(".pic4wrap").css({top:'50%',left:0,width:'50%',height:'50%'});
 			$(".pic5wrap").css({top:'50%',left:'50%',width:'50%',height:'25%'});
 			$(".pic6wrap").css({top:'75%',left:'50%',width:'50%',height:'25%'});
+			
+			$(".screen9 .pic1").width(width*480/800).height(width*326/800).css('position','relative');
+			$(".screen9 .pic2").width(width*480/800).height(width*326/800).css('position','relative');
+			$(".screen9 .text1").width(width*600/800).height('').css('position','relative');
+			$(".screen9 .text2").width(width*600/800).height('').css({'position':'relative','text-align':'left'});
 		}
 		
 		
@@ -105,6 +117,9 @@ $(function() {
 		
 		$(".pdfdown").width(width*(250/1920)).height(width/2.14/45);
 		$(".buynow").width(width*(200/1920)).height(width/2.14/45);
+		$(".screen8 .logo").width(width*(304/1920)).height(width*(96/1920));
+		
+		
 		
 		
 	}); //load resize end
