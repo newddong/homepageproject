@@ -543,7 +543,7 @@
 	content: '';
 	position: absolute;
 	background: white;
-	left: -4%; width : 1px;
+	left: -4%;
 	height: 100%;
 	width: 1px;
 }
