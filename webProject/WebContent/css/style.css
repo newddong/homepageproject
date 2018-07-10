@@ -668,10 +668,11 @@
 
 .screen10_content .buynow {
 	position: absolute;
-	height: 40px;
-	width: 150px;
+	height: 50px;
+	width: 200px;
 	background: white;
 	display: table;
+	border: 1px solid white;
 	border-radius: 3px;
 }
 
@@ -686,9 +687,9 @@
 
 .screen10_content .pdfdown {
 	position: absolute;
-	width: 200px;
-	height: 40px;
-	left: 160px;
+	width: 250px;
+	height: 50px;
+	left: 33%;
 	background: #c3b0a4;
 	display: table;
 	color: white;

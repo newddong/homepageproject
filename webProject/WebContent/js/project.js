@@ -97,10 +97,15 @@ $(function() {
 		$(".screen7 .text").css("fontSize",width/100);
 		$(".screen8 .text").css("fontSize",width/100);
 		$(".screen9").css("fontSize",width/100);
+		$(".screen10").css("fontSize",width/100);
 		$(".screen5 .round1").height(width*0.0417).width(width*0.0417);
 		$(".screen5 .logo").height(width*0.0625);
 		$(".screen6 .round2").height(width*0.0417).width(width*0.0417);
 		$(".screen7 .round3").height(width*0.0417).width(width*0.0417);
+		
+		$(".pdfdown").width(width*(250/1920)).height(width/2.14/45);
+		$(".buynow").width(width*(200/1920)).height(width/2.14/45);
+		
 		
 	}); //load resize end
 	
