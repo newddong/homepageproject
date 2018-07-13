@@ -276,30 +276,43 @@
 }
 /* screen3 스타일 끝 */
 .screen4 {
-	height:900px;/*비디오 없을시 900px*/
-	background: #0f657a url("../img/screen4-1.jpg") no-repeat;
-	background-position: center 200px;
-	min-height: 1000px;
+	position:relative;
+	height:1645px;/*비디오 없을시 900px*/
 	overflow:auto;
 }
+.screen4 .sc4background{
+	position:relative;
+	background: #0f657a url("../img/screen4-1.jpg") no-repeat;
+	background-size:cover;
+	width:100%;
+	height:677px;
+	z-index:10;
+}
 
-.screen4:after {
-	position: absolute;
-	bottom: 0px;
+.screen4 .sc4background2{
+	position: relative;
 	width: 100%;
 	height: 167px;
 	content: '';
 	background: url("../img/screen4-2.jpg") repeat-x;
+	background-size:cover;
+	z-index:10;
 }
 
 .screen4 .text {
+	position:relative;
+	width:100%;
+	height:300px;
 	text-align: center;
+	background:#0f657a;
 	color: white;
-	margin:5% auto -6%;
+	overflow:auto;
+	z-index:10;
+	
 }
 
 .screen4 h1 {
-	margin: 0 auto 30px;
+	margin: 4% auto 0px;
 	font-weight: normal;
 	font-size: 3em;
 }
@@ -311,49 +324,108 @@
 }
 
 .screen4 .movie{
-	height:300px;
+	position:relative;
+	width:100%;
+	top:-25%;
+	height:500px;
+	z-index:9;
+	
 }
 .screen4 .children {
-	position: relative;
-	height: 800px;
-	width: 1300px;
-	margin: 0px auto;
+	position: absolute;
+	top:43%;
+	left:10%;
+	height: 50%;
+	width: 80%;
+	z-index: 11;
+}
+
+.screen4 .step {
+	position: absolute;
+	top:43%;
+	left:10%;
+	height: 50%;
+	width: 80%;
 	z-index: 10;
 }
 
+.screen4 .step .round{
+	position:absolute;
+	border-radius:100%;
+	height:150px;
+	width:150px;
+	font-size:5em;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+	padding-top:1.5%;
+	padding-left:1.5%;
+}
 
+.screen4 .step .round:after{
+	position:absolute;
+	height:50%;
+	width:25%;
+	content:'';
+	background:url("../img/children_step_logo.png") no-repeat;
+	background-size:contain;
+	top:40%;
+	left:15%;
+	
+}	
+.screen4 .step1{
+	top:47%;
+	left:0%;	
+	background:#78c7ce;
+}
+.screen4 .step2{
+	top:33%;
+	left:25%;	
+	background:#78c7ce;
+}
+.screen4 .step3{
+	top:19%;
+	left:51%;	
+	background:#00a6a3;
+}
+.screen4 .step4{
+	top:7%;
+	left:76%;	
+	background:#0099a9;
+}
 
 .screen4 .children .child {
 	position: relative;
 	display: inline-block;
-	width: 300px;
+	width: 25%;
 	height: 100%;
-	margin-left: 10px;
 	background-position: bottom;
+	z-index:11;
 }
 
 .child.num1 {
+	position: relative;
 	background: url("../img/children_01_off.png") no-repeat;
-	top: 10px;
-	left: 30px;
+	background-size:155px 417px;
 }
 
 .child.num2 {
+	position: relative;
 	background: url("../img/children_02_off.png") no-repeat;
-	top: 10px;
-	left: 0px;
+	background-size:158px 561px;
 }
 
 .child.num3 {
+	position: relative;
 	background: url("../img/children_03_off.png") no-repeat;
-	top: 40px;
-	left: 0px;
+	background-size:290px 609px;
+	top:3%;
 }
 
 .child.num4 {
+	position: relative;
 	background: url("../img/children_04_off.png") no-repeat;
-	top: 0px;
-	left: 0px;
+	background-size:210px 807px;
 }
 
 .child.num1.on {

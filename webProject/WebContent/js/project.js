@@ -51,13 +51,23 @@ $(function() {
 		$(".screen1").height(width/2.14);
 		$(".screen2").height(width/2.14);
 		$(".screen3").height(width/2.14);
-		$(".screen4").height(width/2.14);
 		$(".screen5").height(width/2.44);
 		$(".screen6").height(width/2.75);
 		$(".screen7").height(width/2.75);
 		$(".screen8").height(width/1.75);
 		$(".screen10").height(width/2.14);
 		
+		$(".screen4").height(width*1645/1920);
+		$(".screen4 .movie").height(width*500/1920);
+		$(".screen4 .text").height(width*300/1920);
+		$(".screen4 .sc4background").height(width*677/1920);
+		$(".screen4 .sc4background2").height(width*167/1920);
+		$(".screen4 .child.num1").css('background-size',width*155/1920+"px "+width*417/1920+"px");
+		$(".screen4 .child.num2").css('background-size',width*158/1920+"px "+width*561/1920+"px");
+		$(".screen4 .child.num3").css('background-size',width*290/1920+"px "+width*609/1920+"px");
+		$(".screen4 .child.num4").css('background-size',width*210/1920+"px "+width*807/1920+"px");
+		$(".screen4 .round").height(width*150/1920);
+		$(".screen4 .round").width(width*150/1920);
 		
 		if(width>=800){
 			$(".screen9").height(width*0.678);
@@ -104,6 +114,8 @@ $(function() {
 		$(".screen2 .text").css("fontSize",width/100);
 		$(".screen3 .text").css("fontSize",width/100);
 		$(".screen4 .text").css("fontSize",width/100);
+		$(".screen4 .round").css("fontSize",width/20);
+		
 		$(".screen5 .text").css("fontSize",width/100);
 		$(".screen6 .text").css("fontSize",width/100);
 		$(".screen7 .text").css("fontSize",width/100);
@@ -179,9 +191,12 @@ $(function() {
 			children.forEach(function(elt, index, array) {
 				if(index == i){
 					$(".children").children().eq(index).addClass('on');
+					$(".step").children().eq(index).addClass('on');
 				}
 				else{
 					$(".children").children().eq(index).removeClass('on');
+					$(".step").children().eq(index).removeClass('on');
+					
 				}
 			})
 		})})(i);
