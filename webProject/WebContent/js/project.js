@@ -10,9 +10,9 @@ $(function() {
 	if(window.innerWidth>=1920){
 		width = 1920;
 	}
-	else if(window.innerWidth<=640){
-		width = 640;	
-	}
+//	else if(window.innerWidth<=640){
+//		width = 640;	
+//	}
 	
 	$(".main").width(width);
 	$(".intro").height(height);
@@ -38,16 +38,16 @@ $(function() {
 		$(".pic6wrap").css({top:'75%',left:'50%',width:'50%',height:'25%'});
 	}
 	
-	$(window).on("resize", function() {
+	$(window).on("resize", function() {//화면 사이즈를 변경할 때
 		
 		height = window.innerHeight;
 		width = window.innerWidth;
 		if(window.innerWidth>=1920){
 			width = 1920;
 		}
-		else if(window.innerWidth<=320){
-			width = 320;	
-		}
+//		else if(window.innerWidth<=640){
+//			width = 640;	
+//		}
 		$(".screen1").height(width/2.14);
 		$(".screen2").height(width/2.14);
 		$(".screen3").height(width/2.14);
@@ -66,10 +66,18 @@ $(function() {
 		$(".screen4 .child.num2").css('background-size',width*158/1920+"px "+width*561/1920+"px");
 		$(".screen4 .child.num3").css('background-size',width*290/1920+"px "+width*609/1920+"px");
 		$(".screen4 .child.num4").css('background-size',width*210/1920+"px "+width*807/1920+"px");
-		$(".screen4 .round").height(width*150/1920);
-		$(".screen4 .round").width(width*150/1920);
 		
-		if(width>=800){
+		for(var g=0;g<$(".screen4 .round").length;g++){
+			if($(".screen4 .round").eq(g).hasClass("on")){
+				$(".screen4 .round").eq(g).height(width*300/1920);
+				$(".screen4 .round").eq(g).width(width*300/1920);
+			}else{
+				$(".screen4 .round").eq(g).height(width*150/1920);
+				$(".screen4 .round").eq(g).width(width*150/1920);
+			}
+		}
+		
+		if(width/height>=1){//정상 사이즈일 때
 			$(".screen9").height(width*0.678);
 			$(".screen11").height(width*0.447);
 			$(".pic1wrap").css({top:0,left:0,width:'50%',height:'50%'});
@@ -83,8 +91,25 @@ $(function() {
 			$(".screen9 .pic2").width(width*(480/1920)).height(width*0.678*326/1200).css('position','absolute');
 			$(".screen9 .text1").width(width*(600/1920)).height(width*0.678*300/1200).css('position','absolute');
 			$(".screen9 .text2").width(width*(600/1920)).height(width*0.678*300/1200).css('position','absolute');
+			
+			$(".screen1 .text").css("fontSize",width/100);
+			$(".screen2 .text").css("fontSize",width/100);
+			$(".screen3 .text").css("fontSize",width/100);
+			
 		}
-		else{
+		else{//모바일과같이 세로가 길 때
+			$(".screen1").height(height);
+			$(".screen2").height(height);
+			$(".screen3").height(height);
+			$(".screen5").height(height);
+			$(".screen6").height(height);
+			$(".screen7").height(height);
+			
+			$(".screen1 .text").css("fontSize",width/50);
+			$(".screen2 .text").css("fontSize",width/50);
+			$(".screen3 .text").css("fontSize",width/50);
+			
+			
 			$(".screen9").height(width*1.6);
 			$(".screen11").height(width*4*0.447);
 			$(".pic1wrap").css({top:0,left:0,width:'100%',height:'25%'});
@@ -110,9 +135,6 @@ $(function() {
 		
 		
 		
-		$(".screen1 .text").css("fontSize",width/100);
-		$(".screen2 .text").css("fontSize",width/100);
-		$(".screen3 .text").css("fontSize",width/100);
 		$(".screen4 .text").css("fontSize",width/100);
 		$(".screen4 .round").css("fontSize",width/20);
 		
@@ -189,13 +211,17 @@ $(function() {
 		
 		(function(i){$(".children").children().eq(i).on("click",function(){
 			children.forEach(function(elt, index, array) {
-				if(index == i){
-					$(".children").children().eq(index).addClass('on');
-					$(".step").children().eq(index).addClass('on');
-				}
-				else{
+				if(index != i){
 					$(".children").children().eq(index).removeClass('on');
 					$(".step").children().eq(index).removeClass('on');
+					$(".step").children().eq(index).height(width*150/1920);
+					$(".step").children().eq(index).width(width*150/1920);
+				}
+				else{
+					$(".children").children().eq(index).addClass('on');
+					$(".step").children().eq(index).addClass('on');
+					$(".step").children().eq(index).height(width*300/1920);
+					$(".step").children().eq(index).width(width*300/1920);
 					
 				}
 			})
